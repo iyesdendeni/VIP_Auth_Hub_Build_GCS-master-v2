@@ -1,0 +1,21 @@
+{
+    "configName": "TestConfig",
+    "configDescription": "CA DIR k8s with default data",
+    "sslEnabled": "NO",
+    "ldapQueryStart": "(&(cn=",
+    "ldapQueryEnd": ")(objectClass=*))",
+    "attributes": "uid,displayName,telephoneNumber,mail,memberof",
+    "objectClasses": "string",
+    "hostName": "sample-app-ssp-symantec-dir.sample-app.svc",
+    "portNumber": "389",
+    "baseDN": "o=democorp,c=us",
+    "groupBaseDN": "o=democorp,c=us",
+    "groupObjectClasses": "groupOfNames",
+    "groupSearchMappingAttribute": "member",
+    "useMemberOf": "yes",
+    "namingAttribute": "cn",
+    "userDN": "cn=DominicMAJOR,ou=Administration,ou=Corporate,o=democorp,c=US",
+    "bindPassword": "password",
+    "attributeMapping": "name=cn,family_name=sn,given_name=givenName,middle_name=givenName,nickname=displayName,preferred_username=displayName,profile=title,email=mail,phone_number=telephoneNumber,user_universalid=cn,firstName=cn, status=employeeType,memberof=memberof",
+    "passwordResetURL": "http://userPasswordResetURL"
+}
